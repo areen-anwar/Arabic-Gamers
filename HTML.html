@@ -1,0 +1,172 @@
+<!-- صفحة البداية -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة البداية</title>
+    <script>
+        function redirectToLogin() {
+            alert("سيتم توجيهك إلى صفحة تسجيل الدخول");
+            // window.location.href = "login.html";
+        }
+        function redirectToRegister() {
+            alert("سيتم توجيهك إلى صفحة إنشاء الحساب");
+            // window.location.href = "register.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- خيارات التسجيل وإنشاء الحساب -->
+        <div class="option" onclick="redirectToLogin()">تسجيل الدخول</div>
+        <div class="option" onclick="redirectToRegister()">إنشاء حساب</div>
+    </div>
+</body>
+</html>
+
+<!-- صفحة إنشاء الحساب -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- حقول إدخال البيانات -->
+        <div class="input-field">
+            <label>اسم المستخدم</label>
+            <input type="text">
+        </div>
+        <div class="input-field">
+            <label>رقم الهاتف</label>
+            <input type="tel">
+        </div>
+        <div class="input-field">
+            <label>كلمة المرور</label>
+            <input type="password">
+        </div>
+        <!-- زر التالي -->
+        <div class="submit-button">
+            <button>التالي</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- صفحة تسجيل الدخول -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-page">
+        <!-- صورة الخلفية -->
+        <img class="background-image" src="https://via.placeholder.com/1440x1024" alt="Background Image">
+        <div class="login-form">
+            <!-- حقول إدخال اسم المستخدم وكلمة المرور -->
+            <div class="input-field">
+                <label>اسم المستخدم</label>
+                <input type="text">
+            </div>
+            <div class="input-field">
+                <label>كلمة المرور</label>
+                <input type="password">
+            </div>
+            <!-- زر تسجيل الدخول -->
+            <div class="login-button">
+                <button>تسجيل الدخول</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- عرض المنتجات -->
+<div class="product">
+    <!-- صورة المنتج -->
+    <img class="product-image" src="https://via.placeholder.com/251x457" alt="Product Image">
+    <div class="product-details">
+        <!-- تفاصيل المنتج -->
+        <div class="product-name">لعبة هورايزن</div>
+        <div class="product-price">السعر 19.5 ريال</div>
+        <!-- زر إضافة للسلة -->
+        <div class="add-to-cart">
+            <button>اضف للسله</button>
+        </div>
+    </div>
+</div>
+
+<div class="product">
+    <img class="product-image" src="https://via.placeholder.com/254x457" alt="Product Image">
+    <div class="product-details">
+        <div class="product-name">لعبة سبايدرمان</div>
+        <div class="product-price">السعر 22 ريال</div>
+        <div class="add-to-cart">
+            <button>اضف للسله</button>
+        </div>
+    </div>
+</div>
+
+<!-- بانر الخصم -->
+<div class="discount-banner">
+    <img class="discount-image" src="https://via.placeholder.com/816x377" alt="Discount Image">
+    <div class="discount-details">
+        <div class="discount-text">خصم 20 بالمئة</div>
+        <div class="discount-cta">الحق<br>مااا<br>ماتلحق</div>
+    </div>
+</div>
+
+<!-- الصورة الشخصية -->
+<div class="profile">
+    <div class="profile-image">
+        <div class="profile-border"></div>
+        <img class="profile-photo" src="https://via.placeholder.com/193x204" alt="Profile Photo">
+    </div>
+</div>
+
+<!-- صفحة المنتج -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Professional App</title>
+</head>
+<body>
+    <div class="page-container">
+        <div class="product-container">
+            <div class="product-column"></div>
+            <div class="product-column"></div>
+            <div class="product-column"></div>
+            <img class="product-image" src="https://via.placeholder.com/442x683" alt="Product Image">
+            <img class="product-image" src="https://via.placeholder.com/452x566" alt="Product Image">
+            <div class="add-to-cart-button">
+                <button>اضف للسله</button>
+            </div>
+            <div class="add-to-cart-button">
+                <button>اضف للسله</button>
+            </div>
+            <div class="add-to-cart-button">
+                <button>اضف للسله</button>
+            </div>
+            <div class="return-button">
+              <div class="return-button-background"></div>
+              <button class="return-button-label">العودة</button>
+          </div>
+          <div class="price-label">36 ر.س</div>
+          <div class="price-label">25 ر.س</div>
+          <div class="price-label">12 ر.س</div>
+      </div>
+      <img class="product-image" src="https://via.placeholder.com/452x815" alt="صورة المنتج">
+  </div>
+</body>
+</html>
